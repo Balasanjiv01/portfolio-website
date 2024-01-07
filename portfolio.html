@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <!--font awesome cdn font icon css-->
+    <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-k"></i>   
+                    <div class="logo-text">Bala Sanjiv</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href = "#">Home</a></li>
+                        <li><a href = "#">Portfolio</a></li>
+                        <li><a href = "#">Resume</a></li>
+                        <li><a href = "#">Blog</a></li>
+                        <li><a href = "#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="cointainer">
+                <div class="hero-pic">
+                    <img src="media/balasanjiv-image.jpg" alt="profile pic">  <!--add profile pic-->
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm <span class=".input">Frontend Developer</span></h5>
+                    <h1>Bala Sanjiv</h1>
+                    <p>I am Bala Sanjiv.k,a passionate Frontend Developer who recently graduated from Sri Krishna Adithya college of arts and science.With a solid foundation in HTML,CSS,Javascript,Python and SQL,I thrive on creating visually appealing and interactive web experience.
+                    I stay updated on the latest Frontend trends and technologies through continous learning.I've completed various online courses like <b>'FRONTEND WEB DEVELOPMENT'</b>at<b><i>'INFOSYS'</i></b>
+                I had uploaded my Resume for your reference.</p>
+                <div class="btn-group">
+                    <a href = "https://docs.google.com/document/d/1bLFQPvX4uaKf7o-SOw_LEB79HaPtX586/edit?usp=drivesdk&ouid=100401055259991550620&rtpof=true&sd=true" class = "btn active">Download CV</a>
+                    <a href="mail to:balasanjiv01@gmail.com" class="btn">Contact</a>
+                </div>
+                <div class="social">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://linkedin.com/in/bala-sanjiv"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/Balasanjiv01"><i class="fa-brands fa-github"></i></a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--typed js for typing text effect-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+    <script>
+        /**creating button click show hide navbar**/
+        var tooglebtn = document.querySelector(".tooglebtn");
+        var nav = document.querySelector(".navlinks");
+        var links = document.querySelector(".navlinks li");
+
+        tooglebtn.addEventListener("click",function(){
+            this.classList.toogle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed = new Typed(".input",{
+            strings:["Frontend Developer","Web Developer","UX Designer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true,
+        })
+        
+    </script>
+</body>
+</html>
